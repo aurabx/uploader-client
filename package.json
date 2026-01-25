@@ -1,0 +1,43 @@
+{
+  "name": "@aurabx/uploader-client",
+  "version": "1.0.0",
+  "description": "Aura Uploader API client for Node.js - server-side library for auth and manage endpoints",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "example": "tsx src/example.ts"
+  },
+  "keywords": [
+    "aura",
+    "uploader",
+    "api-client",
+    "hmac",
+    "medical-imaging"
+  ],
+  "author": "Aurabx",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}
